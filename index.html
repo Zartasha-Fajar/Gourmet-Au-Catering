@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
+
+</head>
+
+<body>
+
+    <script>
+
+        let section = document.createElement('header')
+        document.body.append(section)
+
+        section.style.width = '100%'
+        section.style.height = '100vh'
+
+        let navbar = document.createElement('div')
+        console.log(navbar);
+        section.appendChild(navbar)
+
+        navbar.style.width = '100%'
+        navbar.style.height = '70px'
+        navbar.style.backgroundColor = 'white'
+        navbar.style.boxShadow = '0px 0px 3px 0px gray'
+        navbar.style.display = 'flex'
+        navbar.style.justifyContent = 'space-between'
+        navbar.style.alignItems = 'center'
+        navbar.style.position = 'fixed'
+        navbar.style.zIndex = '1'
+
+
+        let logo = document.createElement('div')
+        navbar.appendChild(logo)
+
+        logo.style.width = '270px'
+        logo.style.height = '35px'
+        logo.innerHTML = 'Gourment au Catering'
+        logo.style.fontSize = '25px'
+        logo.style.textAlign = 'center'
+        logo.style.cursor = 'pointer'
+
+
+
+        let list = document.createElement('div')
+        navbar.appendChild(list)
+
+        list.setAttribute('class', 'list')
+
+        list.style.width = '200px'
+        list.style.height = '25px'
+        list.style.marginRight = '30px'
+
+
+        let ul = document.createElement('ul')
+        list.appendChild(ul)
+
+        ul.style.listStyleType = 'none'
+        ul.style.display = 'flex'
+        ul.style.justifyContent = 'space-between'
+        ul.style.align = 'center'
+
+
+        let li_1 = document.createElement('li')
+        ul.appendChild(li_1)
+        li_1.innerHTML = 'About'
+        li_1.style.fontSize = '20px'
+
+        let li_2 = document.createElement('li')
+        ul.appendChild(li_2)
+        li_2.innerHTML = 'Menu'
+        li_2.style.fontSize = '20px'
+
+
+        let li_3 = document.createElement('li')
+        ul.appendChild(li_3)
+        li_3.innerHTML = 'Contact'
+        li_3.style.fontSize = '20px'
+
+
+        let bg = document.createElement('div')
+        section.append(bg)
+
+        bg.style.width = '100%'
+        bg.style.height = '100%'
+        bg.style.backgroundImage = "url('image/hamburger.jpg')"
+        bg.style.backgroundSize = 'cover'
+
+        let h1 = document.createElement('h1')
+        bg.appendChild(h1)
+
+        h1.innerHTML = 'Le Catering'
+        h1.style.position = 'absolute'
+        h1.style.bottom = '30px'
+        h1.style.left = '30px'
+        h1.style.fontSize = '40px'
+        h1.style.color = 'rgb(82,84,87)'
+
+
+        let about = document.createElement('div')
+        document.body.append(about)
+
+        about.style.width = '100%'
+        about.style.height = '800px'
+        about.style.display = 'flex'
+        about.style.justifyContent = 'space-evenly'
+        about.style.alignItems = 'center'
+
+        let img_1 = document.createElement('div')
+        about.appendChild(img_1)
+
+        img_1.style.width = '44%'
+        img_1.style.height = '700px'
+        img_1.style.backgroundImage = "url('image/tablesetting2.jpg')"
+        img_1.style.backgroundSize = 'cover'
+        img_1.style.marginTop = '30px'
+
+        let text_1 = document.createElement('div')
+        about.appendChild(text_1)
+
+        text_1.style.width = '41%'
+        text_1.style.height = '550px'
+        text_1.style.marginTop = '-100px'
+        text_1.style.textAlign = 'center'
+
+        let p = document.createElement('p')
+        text_1.appendChild(p)
+
+        p.innerHTML = 'About Catering'
+        p.style.fontSize = '35px'
+        p.style.color = 'rgb(82,84,87)'
+        p.style.marginTop = '20px'
+
+        let p1 = document.createElement('p')
+        text_1.appendChild(p1)
+
+        p1.innerHTML = 'Tradition since 1889'
+        p1.style.fontSize = '19px'
+        p1.style.color = 'rgb(82,84,87)'
+        p1.style.marginTop = '40px'
+
+        let p2 = document.createElement('p')
+        text_1.appendChild(p2)
+
+        p2.innerHTML = 'The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.'
+        p2.style.marginTop = '30px'
+        p2.style.fontSize = '18px'
+
+        let p3 = document.createElement('p')
+        text_1.append(p3)
+
+        p3.innerHTML = 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        p3.style.color = 'gray'
+        p3.style.marginTop = '30px'
+        p3.style.fontSize = '18px'
+
+        let menu = document.createElement('div')
+        document.body.append(menu)
+
+        menu.style.width = '100%'
+        menu.style.height = '850px'
+        menu.style.display = 'flex'
+        menu.style.justifyContent = 'space-evenly'
+        menu.style.boxShadow = '0px 0px 2px 0px gray'
+
+        let text_2 = document.createElement('div')
+        menu.appendChild(text_2)
+
+        text_2.style.width = '41%'
+        text_2.style.height = '600px'
+        text_2.style.marginTop = '50px'
+
+        let p4 = document.createElement('p')
+        text_2.append(p4)
+
+        p4.innerHTML = 'Our Menu'
+        p4.style.fontSize = '35px'
+        p4.style.textAlign = 'center'
+
+        let h6 = document.createElement('h6')
+        text_2.appendChild(h6)
+
+        h6.innerHTML = 'Bread  Basket'
+        h6.style.fontSize = '20px'
+        h6.style.marginTop = '30px'
+
+        let p5 = document.createElement('p')
+        text_2.appendChild(p5)
+
+        p5.innerHTML = 'Assortment of fresh baked fruit breads and muffins 5.50'
+        p5.style.color = 'gray'
+        p5.style.marginTop = '15px'
+
+        let h6_1 = document.createElement('h6')
+        text_2.appendChild(h6_1)
+
+        h6_1.innerHTML = 'Honey Almond Granola with Fruits'
+        h6_1.style.fontSize = '20px'
+        h6_1.style.marginTop = '50px'
+
+        let p6 = document.createElement('p')
+        text_2.appendChild(p6)
+
+        p6.innerHTML = 'Natural cereal of honey toasted oats, raisins, almonds and dates 7.00'
+        p6.style.color = 'gray'
+        p6.style.marginTop = '15px'
+
+        let h6_2 = document.createElement('h6')
+        text_2.appendChild(h6_2)
+
+        h6_2.innerHTML = 'Belgian Waffle'
+        h6_2.style.fontSize = '20px'
+        h6_2.style.marginTop = '50px'
+
+        let p7 = document.createElement('p')
+        text_2.appendChild(p7)
+
+        p7.innerHTML = 'Vanilla flavored batter with malted flour 7.50'
+        p7.style.color = 'gray'
+        p7.style.marginTop = '15px'
+
+        let h6_3 = document.createElement('h6')
+        text_2.appendChild(h6_3)
+
+        h6_3.innerHTML = 'Scrambled eggs'
+        h6_3.style.fontSize = '20px'
+        h6_3.style.marginTop = '50px'
+
+        let p8 = document.createElement('p')
+        text_2.appendChild(p8)
+
+        p8.innerHTML = 'Scrambled eggs, roasted red pepper and garlic, with green onions 7.50'
+        p8.style.color = 'gray'
+        p8.style.marginTop = '15px'
+
+        let h6_4 = document.createElement('h6')
+        text_2.appendChild(h6_4)
+
+        h6_4.innerHTML = 'Blueberry Pancakes'
+        h6_4.style.fontSize = '20px'
+        h6_4.style.marginTop = '50px'
+
+        let p9 = document.createElement('p')
+        text_2.appendChild(p9)
+
+        p9.innerHTML = 'With syrup, butter and lots of berries 8.50  '
+        p9.style.color = 'gray'
+        p9.style.marginTop = '15px'
+
+        let img_2 = document.createElement('div')
+        menu.appendChild(img_2)
+
+        img_2.style.width = '44%'
+        img_2.style.height = '700px'
+        img_2.style.backgroundImage = "url('image/tablesetting.jpg')"
+        img_2.style.backgroundSize = 'cover'
+        img_2.style.marginTop = '50px'
+
+
+        let con = document.createElement('div')
+        document.body.append(con)
+
+        con.style.width = '100%'
+        con.style.height = '800px'
+        con.style.display = 'flex'
+        con.style.justifyContent = 'center'
+        con.style.alignItems = 'center'
+
+        let cont = document.createElement('div')
+        con.appendChild(cont)
+
+        cont.style.width = '92%'
+        cont.style.height = '650px'
+
+        let h11 = document.createElement('p')
+        cont.append(h11)
+
+        h11.innerHTML = 'Contact'
+        h11.style.fontSize = '35px'
+
+        let pp = document.createElement('p')
+        cont.appendChild(pp)
+
+        pp.innerHTML = 'We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.'
+        pp.style.marginTop = '40px'
+
+        let ppp = document.createElement('p')
+        cont.appendChild(ppp)
+        ppp.innerHTML = 'Catering Service, 42nd Living St, 43043 New York, NY'
+        ppp.style.marginTop = '20px'
+        ppp.style.fontSize = '22px'
+        ppp.style.color = 'rgb(96,125,139)'
+
+        let pppp = document.createElement('p')
+        cont.appendChild(pppp)
+
+        pppp.innerHTML = 'You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:'
+        pppp.style.marginTop = '30px'
+
+        let inp = document.createElement("input")
+        cont.appendChild(inp)
+
+        inp.setAttribute("type", "text")
+        inp.setAttribute('placeholder', 'Name')
+        inp.style.width = '100%'
+        inp.style.height = '50px'
+        inp.style.marginTop = '30px'
+        inp.style.border = 'none'
+        inp.style.borderBottom = '1px solid gray'
+
+        let inp1 = document.createElement('input')
+        cont.appendChild(inp1)
+        inp1.setAttribute('type', 'number')
+        inp1.setAttribute('placeholder', 'How Many People')
+        inp1.style.width = '100%'
+        inp1.style.height = '50px'
+        inp1.style.marginTop = '30px'
+        inp1.style.border = 'none'
+        inp1.style.borderBottom = '1px solid gray'
+
+        let inp2 = document.createElement('input')
+        cont.appendChild(inp2)
+
+        inp2.setAttribute('type', 'datetime-local')
+        inp2.style.width = '100%'
+        inp2.style.height = '50px'
+        inp2.style.marginTop = '30px'
+        inp2.style.border = 'none'
+        inp2.style.borderBottom = '1px solid gray'
+
+        let inp3 = document.createElement("input")
+        cont.appendChild(inp3)
+
+        inp3.setAttribute("type", "text")
+        inp3.setAttribute('placeholder', 'Massage / Special Requirements')
+        inp3.style.width = '100%'
+        inp3.style.height = '50px'
+        inp3.style.marginTop = '30px'
+        inp3.style.border = 'none'
+        inp3.style.borderBottom = '1px solid gray'
+
+        let button = document.createElement('button')
+        cont.append(button)
+
+        button.style.width = '180px'
+        button.style.height = '50px'
+        button.style.marginTop = '50px'
+        button.style.border = 'none'
+        button.innerHTML = 'SEND MASSAGE'
+        button.style.fontSize = '18px'
+
+        let footer = document.createElement('div')
+        document.body.append(footer)
+
+        footer.style.width = '100%'
+        footer.style.height = '150px'
+        footer.style.backgroundColor = 'rgb(241,241,241)'
+        footer.style.display = 'flex'
+        footer.style.flexDirection = 'column'
+        footer.style.justifyContent = 'center'
+        footer.style.alignItems = 'center'
+
+        let last = document.createElement('p')
+        footer.appendChild(last)
+
+        last.innerHTML = 'Powered by w3.css'
+        last.style.fontSize = '18px'
+
+    </script>
+</body>
+
+</html>
